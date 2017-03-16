@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import bs4, itertools, matplotlib, numpy, os, random, re, requests, sys, time
 from matplotlib import pyplot
 
@@ -18,6 +20,17 @@ def get_n_results_dumb(q):
         return 0
     m = re.search(r'([0-9,]+)', s)
     return int(m.groups()[0].replace(',', ''))
+
+def page_rank(m, beta=0.85, niter=20):
+    N = m.shape[0]
+    x = numpy.ones(N, dtype=numpy.float32) / N
+    for i in range(niter):
+        x_next = m.dot(x) * beta
+        x_next += (1 - beta) / N  # ***
+        xdiff = numpy.linalg.norm(x - x_next, ord=1)
+        x = x_next
+        print(("iter #%d: %f" % (i + 1, xdiff)))
+    return x
 
 if True:
     tag = 'prog_lang'
@@ -47,7 +60,7 @@ for item1, item2 in itertools.product(items, items):
 
 m = numpy.zeros((len(items), len(items)))
 random.shuffle(qs)
-print 100. * len(set(cache).intersection([q for _, _, q in qs])) / len(qs)
+print(100. * len(set(cache).intersection([q for _, _, q in qs])) / len(qs))
 
 for i, j, q in qs:
     if q in cache:
@@ -92,23 +105,28 @@ def plot_mat(m, items, cm, fn, text=False, dir_text=None):
     pyplot.savefig(fn, dpi=300)
 
 # Plot lexicographical
-ps = sorted(range(len(items)), key=lambda i: items[i])
+ps = sorted(list(range(len(items))), key=lambda i: items[i])
 plot_mat(m[ps,:][:,ps], sorted(items), pyplot.cm.OrRd, '%s_matrix.png' % tag, text=True)
 
 m += numpy.eye(len(items)) # hack to fix zero entries
 for item, pop in zip(items, m.sum(axis=0) + m.sum(axis=1)):
-    print('%20s %6d' % (item, pop))
+    print(('%20s %6d' % (item, pop)))
 m /= m.sum(axis=0)[numpy.newaxis,:]
 u = numpy.ones(len(items))
 
-for i in xrange(100):
+for i in range(100):
     u = numpy.dot(m, u)
     u /= u.sum()
 
 # Create a new matrix where rows/columns are ordered by u
-ps = sorted(range(len(items)), key=lambda i: u[i])
+ps = sorted(list(range(len(items))), key=lambda i: u[i])
 for p in reversed(ps):
-    print('| %5.2f%% | %20s |' % (u[p]*100, items[p]))
+    print(('| %5.2f%% | %20s |' % (u[p]*100, items[p])))
 
 m_new = m[ps,:][:,ps]
+
+prs = page_rank(m_new)
+for pr, lang in sorted(zip(prs, [items[p] for p in ps]), reverse=True):
+    print("%12s\t%.3f" % (lang, pr))
+
 plot_mat(m_new, [items[p] for p in ps], pyplot.cm.BuGn, '%s_matrix_eig.png' % tag, dir_text='future popularity')
