@@ -203,7 +203,7 @@
 "switched to php from c++"	0
 "move to python from c#"	0
 "move from visual basic to swift"	0
-"switched from go to python"	3
+"switched from go to python"	0
 "move from perl to c#"	0
 "switch from c# to java"	2360
 "move to go from node"	0
@@ -267,11 +267,11 @@
 "moved from c++ to go"	4
 "switched from perl to c"	5
 "switch to c++ from c"	6
-"move from go to c"	1
+"move from go to c"	0
 "switch from swift to visual basic"	0
 "moved to php from python"	0
 "moved to c++ from java"	3
-"move from go to node"	1
+"move from go to node"	0
 "switched from visual basic to c++"	2
 "moved to swift from ruby"	0
 "move to php from visual basic"	0
@@ -298,7 +298,7 @@
 "switch from php to python"	685
 "switch from c# to ruby"	5
 "moved to c# from c"	2
-"switched from go to swift"	1
+"switched from go to swift"	0
 "move from python to ruby"	10
 "move from c++ to python"	2420
 "switched from visual basic to java"	6
@@ -583,7 +583,7 @@
 "move from go to swift"	0
 "moved to node from swift"	0
 "switch from c++ to c"	3550
-"moved from go to node"	1
+"moved from go to node"	0
 "switch from java to c"	2410
 "switch from perl to swift"	0
 "move to c from php"	0
@@ -900,7 +900,7 @@
 "move from go to ruby"	0
 "switch to c# from php"	0
 "switched from go to java"	0
-"switch from go to c"	1
+"switch from go to c"	0
 "switched to go from c++"	0
 "moved from visual basic to c++"	0
 "moved to php from node"	0
@@ -1019,7 +1019,7 @@
 "move from node to perl"	0
 "switched to c# from c++"	442
 "switched from swift to ruby"	0
-"switch from go to node"	2
+"switch from go to node"	0
 "move to node from visual basic"	0
 "switched from perl to go"	0
 "move from node to ruby"	0
@@ -1043,7 +1043,7 @@
 "move from swift to ruby"	0
 "switched to c# from c"	9
 "moved from perl to c++"	1
-"switched from go to c"	1
+"switched from go to c"	0
 "switch from ruby to node"	4
 "move to visual basic from python"	0
 "switched to c++ from php"	1
@@ -1808,7 +1808,7 @@
 "switch to lua from c++"	0
 "moved from fortran to pascal"	8
 "move from dart to c#"	0
-"switch from go to erlang"	2
+"switch from go to erlang"	0
 "moved from clojure to objective c"	0
 "moved to visual basic from haskell"	0
 "move to swift from prolog"	0
@@ -2530,7 +2530,7 @@
 "switch to dart from prolog"	0
 "switched to clojure from haskell"	0
 "switched to objective c from r"	0
-"moved from go to rust"	2
+"moved from go to rust"	0
 "move to dart from swift"	0
 "moved from node to matlab"	0
 "switched from node to r"	0
@@ -3024,7 +3024,7 @@
 "switch to c from haskell"	0
 "move from clojure to node"	0
 "move to c# from lisp"	0
-"switch from go to haskell"	1
+"switch from go to haskell"	0
 "switched from erlang to clojure"	0
 "switched to matlab from erlang"	0
 "move to objective c from perl"	0
@@ -3856,7 +3856,7 @@
 "move from matlab to ruby"	0
 "switched to dart from ruby"	0
 "switched to ruby from pascal"	0
-"switch from go to rust"	6
+"switch from go to rust"	0
 "switch to objective c from ruby"	0
 "switch from lisp to python"	137
 "switched to haskell from c"	0
@@ -4498,7 +4498,7 @@
 "switch from swift to matlab"	0
 "switch from ruby to lua"	1
 "move from c++ to lua"	4
-"switched from go to rust"	2
+"switched from go to rust"	0
 "switch to cobol from perl"	0
 "moved from php to lua"	0
 "moved to go from dart"	0
@@ -4795,7 +4795,7 @@
 "switched from lua to perl"	0
 "move to erlang from clojure"	0
 "switched to prolog from visual basic"	0
-"moved from go to haskell"	5
+"moved from go to haskell"	0
 "moved from php to haskell"	0
 "move to haskell from lisp"	0
 "switched to c# from cobol"	0
@@ -5058,7 +5058,7 @@
 "switched from matlab to dart"	0
 "switched to r from pascal"	0
 "switch to rust from c#"	0
-"switched from go to erlang"	1
+"switched from go to erlang"	0
 "switched to ruby from matlab"	0
 "moved to prolog from clojure"	0
 "moved from lisp to r"	0
@@ -5261,7 +5261,7 @@
 "move from visual basic to haskell"	0
 "moved to dart from fortran"	0
 "switched to r from c"	1
-"move from go to dart"	2
+"move from go to dart"	0
 "switched from rust to matlab"	0
 "switched to visual basic from clojure"	0
 "switched to cobol from java"	0
@@ -6342,7 +6342,7 @@
 "switched from cobol to kotlin"	0
 "move from matlab to elixir"	0
 "switch to pascal from typescript"	0
-"switched from go to elixir"	1
+"switched from go to elixir"	0
 "switch from typescript to haskell"	0
 "switched to matlab from kotlin"	0
 "switched from typescript to erlang"	0
@@ -7035,7 +7035,7 @@
 "code to erlang from php"	0
 "code from python to dart"	1
 "code to kotlin from matlab"	0
-"code from go to clojure"	1
+"code from go to clojure"	0
 "code from r to cobol"	0
 "code from ruby to rust"	0
 "code to node from php"	0
@@ -7418,7 +7418,7 @@
 "code from dart to node"	0
 "code to rust from haskell"	0
 "code to php from c#"	1
-"code from go to erlang"	1
+"code from go to erlang"	0
 "code to cobol from c#"	0
 "code to c from elixir"	0
 "code from go to r"	0
@@ -7943,7 +7943,7 @@
 "code to c++ from php"	0
 "code from erlang to python"	0
 "code to php from dart"	0
-"code from go to python"	1
+"code from go to python"	0
 "code to node from haskell"	0
 "code from cobol to java"	7
 "code to cobol from elixir"	0
@@ -8155,7 +8155,7 @@
 "code to clojure from haskell"	0
 "code to objective c from python"	0
 "code to kotlin from java"	0
-"code from go to node"	4
+"code from go to node"	0
 "code from clojure to go"	0
 "code to cobol from dart"	0
 "code from rust to go"	0
@@ -8387,7 +8387,7 @@
 "code from go to pascal"	0
 "code to php from lua"	0
 "code from kotlin to erlang"	0
-"code from go to rust"	1
+"code from go to rust"	0
 "code to erlang from pascal"	0
 "code to c# from swift"	0
 "code to java from php"	0
